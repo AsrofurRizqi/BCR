@@ -1,0 +1,191 @@
+/* body */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: white;
+}
+/* navbar */
+.navbar {
+    background-color: #F1F3FF;
+}
+.navbar-brand {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-item .btn {
+    height: 40px;
+}
+.nav-item .btn a{
+    height: 40px;
+    color: white;
+}
+/* list services*/
+ul {
+    list-style-image: url('/resources/image/Group\ 53.png');
+}
+li a{
+    top: -7px;
+    position: relative;
+}
+/* main jumbotron */
+.banner-utama {
+    background-color: #F1F3FF !important;
+    padding-bottom: 0px !important;
+}
+.card {
+    margin-top: 40px;
+}
+.banner-sewa{
+    border-radius: 15px !important;
+    background-color: blue !important;
+}
+.banner-sewa h1 {
+    color: white;
+}
+/* override bootstrap default , carousel testimony */
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+.carousel-item .card {
+    background-color: #F1F3FF;
+}
+.btn-caro{
+    border: 1px solid black !important;
+    border-radius: 20px !important;
+}
+.btn-caro:hover{
+    background-color: #5CB85F;
+}
+.fa-star {
+    color: yellow;
+}
+
+/* jumbotron banner sewa sekarang */
+.jumbotron-fluid h2 {
+    font-weight: bold;
+    color: white;
+}
+.jumbotron-fluid p {
+    color: white;
+}
+.card-title {
+    font-weight: bold;
+}
+.deskripsi {
+    width: 50%;
+    margin: auto;
+}
+/* collapse frequently ask */
+.collapsible-link {
+    width: 100%;
+    position: relative;
+}
+.collapsible-link::before {
+    content: '\f107';
+    position: absolute;
+    top: 20px;
+    right: 0.8rem;
+    transform: translateY(-50%);
+    display: block;
+    font-family: 'FontAwesome';
+}
+.card-faq {
+    margin-top: 0px;
+    border: 1px solid gray !important;
+    border-radius: 5px !important;
+}
+.card-faq a {
+    text-align: left;
+    text-decoration: none;
+}
+.collapsible-link[aria-expanded='true']::before {
+    content: '\f106';
+}
+/* Css Bagian Footer */
+footer {
+    margin-top: 120px;
+}
+.footer-menu a {
+    color: black !important;
+    font-weight: 400;
+    font-size: 14;
+}
+.icon-sosmed a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
