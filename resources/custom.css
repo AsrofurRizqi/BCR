@@ -22,9 +22,6 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 }
-.nav-item .btn {
-    height: 40px;
-}
 .nav-item .btn a{
     height: 40px;
     color: white;
@@ -44,6 +41,7 @@ li a{
 .banner-utama {
     background-color: #F1F3FF !important;
     padding-bottom: 0px !important;
+    margin-top: 55px;
 }
 .card {
     margin-top: 40px;
