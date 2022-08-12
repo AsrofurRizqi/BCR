@@ -29,9 +29,12 @@ body {
     height: 40px;
     color: white;
 }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
 /* list services*/
 ul {
-    list-style-image: url('/resources/image/Group\ 53.png');
+    list-style-image: url('./image/Group53.png');
 }
 li a{
     top: -7px;
@@ -47,7 +50,7 @@ li a{
 }
 .banner-sewa{
     border-radius: 15px !important;
-    background-color: blue !important;
+    background-color: darkblue !important;
 }
 .banner-sewa h1 {
     color: white;
@@ -132,7 +135,7 @@ li a{
     background-color: #5CB85F;
 }
 .fa-star {
-    color: yellow;
+    color: rgb(235, 200, 6);
 }
 
 /* jumbotron banner sewa sekarang */
