@@ -16,6 +16,7 @@
 }
 body {
     background-color: white;
+    overflow-x: hidden;
 }
 /* navbar */
 .navbar {
@@ -60,7 +61,7 @@ body {
     overflow-y: auto;
  }
  .bs-canvas-right {
-    right: 100px;
+    right: 0;
  }
  
  .bs-canvas-anim {
