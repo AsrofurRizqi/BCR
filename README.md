@@ -1,4 +1,4 @@
-#Binar-Car-Rental
+# Binar-Car-Rental
 
-#####Example Website
+##### Example Website
 https://bcr-kuro.herokuapp.com
