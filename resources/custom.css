@@ -8,16 +8,18 @@
     .faq-header {
         text-align: center;
     }
-
   }
 /* body */
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
-body {
+html, body {
     background-color: white;
     overflow-x: hidden;
 }
+body {
+    position: relative
+  }
 /* navbar */
 .navbar {
     background-color: #F1F3FF;
